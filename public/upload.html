@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Blog Post</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/upload">Upload Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Upload a New Blog Post</h1>
+        <form id="upload-form">
+            <input type="text" id="title" placeholder="Blog Title" required>
+            <input type="text" id="author" placeholder="Author Name" required>
+            <div id="editor"></div>
+            <input type="file" id="image" accept="image/*">
+            <button type="submit">Upload Post</button>
+        </form>
+    </main>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="/js/upload.js"></script>
+</body>
+</html>
